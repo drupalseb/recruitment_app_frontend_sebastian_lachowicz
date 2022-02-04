@@ -3,6 +3,10 @@
   margin-bottom: 50px;
   .banner-background {
     position: relative;
+    .w100 {
+      min-height: 400px;
+      object-fit: cover;
+    }
   }
   .banner-content {
     position: absolute;

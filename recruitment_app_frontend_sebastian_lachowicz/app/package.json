@@ -1,7 +1,6 @@
 {
   "name": "app",
   "version": "1.0.0",
-  "description": "",
   "main": "index.html",
   "scripts": {
     "build": "webpack --config webpack.config.js --mode='production'",
@@ -13,9 +12,10 @@
   "devDependencies": {
     "file-loader": "^6.2.0",
     "node-sass": "^6.0.1",
-    "sass": "^1.43.5",
+    "sass": "^1.49.7",
     "sass-loader": "^12.3.0",
     "webpack": "^5.64.4",
     "webpack-cli": "^4.9.1"
-  }
+  },
+  "description": ""
 }

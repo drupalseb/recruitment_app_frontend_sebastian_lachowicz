@@ -6,12 +6,14 @@
   align-items: center;
   .logo {
     .navbar-brand {
+      font-size: 0px;
+      background-repeat: no-repeat;
     }
   }
   .navbar-box {
     a {
       line-height: 1em;
-      font-size: 1.1rem;
+      font-size: 1.1em;
       font-weight: 700;
       color: #517595;
       text-transform: uppercase;
@@ -25,7 +27,7 @@
       span {
         display: block;
         font-weight: normal;
-        font-size: 0.8rem;
+        font-size: 0.8em;
         color: #999999;
         line-height: 1em;
 
@@ -72,4 +74,38 @@ display: inline-block;
       background-position: -32px -135px;
     }
   }
+  @media (min-width:769px ) {
+    .navbar-primary {
+      align-items: center;
+    }
+    .navbar-brand {
+      width: 240px;
+      height: 60px;
+      background-image: url("../img/logo.png");
+    }
+  }
+
+
+}
+@media (max-width: 768px) {
+  .navbar-primary {
+
+    padding-top: 0px;
+    padding-bottom:15px;
+    align-items: flex-start;
+  }
+  .navbar-brand {
+    width: 170px;
+    height: 42px;
+    background-image:url("../img/logo_small.png");
+  }
+  .call-box, .email-box {
+    margin-top: 20px;
+  }
+  .social-box {
+    align-self: end;
+  }
+}
+@media (max-width:320px) {
+
 }

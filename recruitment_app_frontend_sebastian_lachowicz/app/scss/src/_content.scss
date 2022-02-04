@@ -1,0 +1,62 @@
+.main-content {
+  .column-wrapper {
+    .column {
+      display: block;
+      &:before {
+        display: block;
+        width: 100px;
+        height: 100px;
+        content: "";
+        margin: 20px auto;
+      }
+      &:first-of-type {
+        a {
+          &:after {
+            content: url("../img/arrow_specifier_0.png");
+          }
+        }
+        &:before {
+          background-image:url('../img/sprites-sf564010b4e.png');
+          background-repeat: no-repeat;
+          background-position: 0px -339px;
+        }
+      }
+      &:nth-of-type(2) {
+        a {
+          &:after {
+            content: url("../img/arrow_builder_0.png");
+          }
+        }
+        &:before {
+          background-image:url('../img/sprites-sf564010b4e.png');
+          background-repeat: no-repeat;
+          background-position: 0px 0px;
+        }
+      }
+      &:last-of-type {
+        a {
+          &:after {
+            content: url("../img/arrow_manufacturer_0.png");
+          }
+        }
+        &:before {
+          background-image:url('../img/sprites-sf564010b4e.png');
+          background-repeat: no-repeat;
+          background-position: 0px -239px;
+        }
+      }
+      a {
+        font-weight: 600;
+        text-transform: uppercase;
+        color:#517595;
+        position: relative;
+        &:after {
+          display: inline-block;
+          position: absolute;
+          padding-left:20px;
+        }
+      }
+    }
+
+  }
+}
