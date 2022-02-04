@@ -1,0 +1,75 @@
+.navbar-primary {
+  height: 120px;
+    display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    .navbar-brand {
+    }
+  }
+  .navbar-box {
+    a {
+      line-height: 1em;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #517595;
+      text-transform: uppercase;
+      &:hover {
+        text-decoration: none;
+        color:darken(#517595,20%);
+        span {
+          color:darken(#999999,20%);
+        }
+      }
+      span {
+        display: block;
+        font-weight: normal;
+        font-size: 0.8rem;
+        color: #999999;
+        line-height: 1em;
+
+      }
+    }
+  }
+  .call-box, .email-box {
+    a {position: relative;
+      &:before {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 0px;
+        left: -50px;
+      }
+    }
+  }
+  .call-box {
+    a:before {
+     content:url("../img/header-call.png");
+    }
+  }
+  .email-box {
+    a:before {
+      content:url("../img/header-email.png");
+    }
+  }
+  .social-box {
+    a {
+display: inline-block;
+      width: 35px;
+      height: 35px;
+      font-size: 0px;
+    }
+    #instagram {
+      background-image:url('../img/sprites-sf564010b4e.png');
+      background-repeat: no-repeat;
+      background-position: -32px -100px;
+    }
+    #twitter {
+      background-image:url('../img/sprites-sf564010b4e.png');
+      background-repeat: no-repeat;
+      background-position: -32px -135px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+// font configuration:
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Slab:wght@400;600&display=swap');
+$header-font:'Roboto Slab', serif;
+$text-font:'Lato', sans-serif;
+body {
+  font-family: $text-font;
+  color: #51758c;
+  font-szie: 16px;
+}
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+h1, h2, h3, h4 {
+  font-family: $header-font;
+  text-transform: uppercase;
+}
